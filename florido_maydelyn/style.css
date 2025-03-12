@@ -19,7 +19,6 @@ body {
 }
 
 .title {
-  /* color: rgb(0, 0, 0); */
   background: rgba(255, 255, 255, 0.396);
   width: 100%;
   height: 30vh;
@@ -86,4 +85,113 @@ img {
 #gallery > h2 {
   color: rgb(177, 2, 2);
   background: rgba(0, 0, 0, 0.797);
+}
+
+.form {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px;
+  height: 100vh;
+  border-top: 10px solid rgb(0, 0, 0);
+  position: relative;
+}
+
+.form::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("images/catbg.jpg");
+  background-size: cover;
+  background-position: center;
+  filter: blur(5px);
+  z-index: -1;
+}
+
+form {
+  background: rgb(160, 160, 160);
+  padding: 30px;
+  border-radius: 10px;
+  width: 300px;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-top: 10px;
+}
+
+input,
+textarea {
+  width: 92%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  margin-top: 15px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+@media (max-width: 426px) {
+  body {
+    font-size: 10px;
+  }
+
+  .background {
+    height: 10vh;
+  }
+
+  .title {
+    height: 10vh;
+    font-size: 10px;
+  }
+
+  #interest_hobbies,
+  #works,
+  #testemonials {
+    padding: 10px;
+  }
+
+  h2 {
+    font-size: 15px;
+    height: 7vh;
+  }
+
+  .form {
+    justify-content: center;
+  }
+
+  form {
+    width: 150px;
+  }
+
+  input,
+  textarea {
+    width: 90%;
+    padding: 5px;
+    margin-top: 5px;
+    font-size: 11px;
+  }
+
+  button {
+    padding: 5px;
+    font-size: 11px;
+  }
 }
